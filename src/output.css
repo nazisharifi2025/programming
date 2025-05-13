@@ -244,6 +244,9 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
