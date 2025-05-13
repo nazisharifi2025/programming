@@ -170,8 +170,17 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-7 {
+    margin-block: calc(var(--spacing) * 7);
+  }
+  .my-12 {
+    margin-block: calc(var(--spacing) * 12);
+  }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
