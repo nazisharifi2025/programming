@@ -211,6 +211,9 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -243,6 +246,9 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
