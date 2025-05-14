@@ -10,5 +10,12 @@ showingDiv.addEventListener("click", () => {
   const episode = input2.ariaValueMax.trim();
   const imgLink = input3.ariaValueMax.trim();
   if (!film && !episode && !imgLink) {
+    Empiti.classList.remove("hidden");
+    Empiti.classList.add("flex");
+    setInterval(() => {
+      Empiti.classList.add("hidden");
+      Empiti.classList.remove("flex");
+    }, 2000);
+    return;
   }
 });
