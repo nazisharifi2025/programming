@@ -5,10 +5,10 @@ const saveBtn = document.getElementById("Savebtn");
 const showingDiv = document.getElementById("Shoing");
 const Empiti = document.getElementById("Empiti");
 
-showingDiv.addEventListener("click", () => {
-  const film = input1.ariaValueMax.trim();
-  const episode = input2.ariaValueMax.trim();
-  const imgLink = input3.ariaValueMax.trim();
+saveBtn.addEventListener("click", () => {
+  const film = input1.value.trim();
+  const episode = input2.value.trim();
+  const imgLink = input3.value.trim();
   if (!film && !episode && !imgLink) {
     Empiti.classList.remove("hidden");
     Empiti.classList.add("flex");
@@ -23,7 +23,7 @@ showingDiv.addEventListener("click", () => {
   inboxdiv.classList.add("inboxdiv");
   const h2 = document.createElement("h2");
   h2.classList.add("h2");
-  h2.textContent = `فیلم: ${episode || "نامشخص"}`;
+  h2.textContent = `سریال: ${film || "نامشخص"}`;
 
   const p = document.createElement("p");
   p.classList.add("mb-1");
@@ -33,9 +33,10 @@ showingDiv.addEventListener("click", () => {
   inboxdiv.appendChild(p);
   if (imgLink) {
     const imgs = document.createElement("img");
-    imgs.setAttribute("src", "imgLink");
+    imgs.setAttribute("src", imgLink);
     imgs.setAttribute("alt", "File-img");
     imgs.classList.add("imgs");
+    inboxdiv.appendChild(imgs);
   }
   showingDiv.classList.add("flex");
   showingDiv.classList.remove("hidden");

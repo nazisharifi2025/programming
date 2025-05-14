@@ -54,7 +54,6 @@ saveBtn.addEventListener("click", () => {
   const infoBox = document.createElement("div");
   infoBox.className =
     "bg-white text-black p-4 rounded-md shadow-md my-4 float-right flex flex-col justify-center items-center";
-
   infoBox.innerHTML = `
     <h2 class="font-bold text-xl mb-2">سریال: ${film || "نامشخص"}</h2>
     <p class="mb-1">قسمت: ${episode || "نامشخص"}</p>
