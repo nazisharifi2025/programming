@@ -226,6 +226,9 @@
   .h-auto {
     height: auto;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
@@ -265,6 +268,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .overflow-scroll {
+    overflow: scroll;
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -290,6 +296,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\.\.\/poblic\/shahrzad-Back\.jpg\)\] {
+    background-image: url(../poblic/shahrzad-Back.jpg);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
