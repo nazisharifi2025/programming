@@ -30,6 +30,7 @@ const input2 = document.getElementById("input2");
 const input3 = document.getElementById("input3");
 const saveBtn = document.getElementById("Savebtn");
 const showingDiv = document.getElementById("Shoing");
+const Empiti = document.getElementById("Empiti");
 
 // اضافه کردن Event به دکمه Save
 saveBtn.addEventListener("click", () => {
@@ -40,7 +41,12 @@ saveBtn.addEventListener("click", () => {
 
   // بررسی خالی نبودن
   if (!film && !episode && !imgLink) {
-    alert("لطفاً حداقل یک فیلد را پر کنید.");
+    Empiti.classList.remove("hidden");
+    Empiti.classList.add("flex");
+    setInterval(() => {
+      Empiti.classList.add("hidden");
+      Empiti.classList.remove("flex");
+    }, 3000);
     return;
   }
 
