@@ -106,20 +106,20 @@
 // //     setTimeout(types, 135);
 // //   }
 // // }
-// // types();
-// // const observer = new IntersectionObserver(
-// //   (entries) => {
-// //     entries.forEach((entry) => {
-// //       if (entry.isIntersecting) {
-// //         entry.target.classList.add("animate-fade-up-show");
-// //       } else {
-// //         entry.target.classList.remove("animate-fade-up-show"); // اختیاری: وقتی از دید خارج شد حذف کن
-// //       }
-// //     });
-// //   },
-// //   {
-// //     threshold: 0.3,
-// //   }
+types();
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fade-up-show");
+      } else {
+        entry.target.classList.remove("animate-fade-up-show"); // اختیاری: وقتی از دید خارج شد حذف کن
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
 );
 
 document
