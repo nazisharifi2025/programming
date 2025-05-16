@@ -97,15 +97,15 @@
 // //   div.classList.remove("flex");
 // //   search.style.display = "block";
 // // });
-// // const text = "Dinner with us Friend or With Family Or .........";
-// // let index = 0;
-// // function types() {
-// //   if (index < text.length) {
-// //     document.getElementById("text").textContent += text.charAt(index);
-// //     index++;
-// //     setTimeout(types, 135);
-// //   }
-// // }
+const text = "Dinner with us Friend or With Family Or .........";
+let index = 0;
+function types() {
+  if (index < text.length) {
+    document.getElementById("text").textContent += text.charAt(index);
+    index++;
+    setTimeout(types, 135);
+  }
+}
 types();
 const observer = new IntersectionObserver(
   (entries) => {
