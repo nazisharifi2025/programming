@@ -36,18 +36,18 @@
 //     { name: "Tonila", genre: "War", year: 2001 },
 //   ];
 
-//   search.addEventListener("click", () => {
-//     div.classList.remove("hidden");
-//     div.classList.add("flex");
-//     search.style.display = "none";
-//   });
+  search.addEventListener("click", () => {
+    div.classList.remove("hidden");
+    div.classList.add("flex");
+    search.style.display = "none";
+  });
 
-//   close.addEventListener("click", () => {
-//     div.classList.add("hidden");
-//     div.classList.remove("flex");
-//     search.style.display = "block";
-//     suggestionsBox.innerHTML = "";
-//   });
+  close.addEventListener("click", () => {
+    div.classList.add("hidden");
+    div.classList.remove("flex");
+    search.style.display = "block";
+    suggestionsBox.innerHTML = "";
+  });
 
   input.addEventListener("input", function () {
     const query = input.value.toLowerCase().trim();
