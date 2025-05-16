@@ -76,13 +76,13 @@
 //     }
 //   });
 
-//   // بستن پیشنهادها اگر کلیک خارج از input یا لیست بود
-//   document.addEventListener("click", function (e) {
-//     if (!input.contains(e.target) && !suggestionsBox.contains(e.target)) {
-//       suggestionsBox.innerHTML = "";
-//     }
-//   });
-// });
+  // بستن پیشنهادها اگر کلیک خارج از input یا لیست بود
+  document.addEventListener("click", function (e) {
+    if (!input.contains(e.target) && !suggestionsBox.contains(e.target)) {
+      suggestionsBox.innerHTML = "";
+    }
+  });
+});
 
 const search = document.getElementById("search");
 const div = document.getElementById("div");
