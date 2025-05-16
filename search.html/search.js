@@ -49,15 +49,15 @@
 //     suggestionsBox.innerHTML = "";
 //   });
 
-//   input.addEventListener("input", function () {
-//     const query = input.value.toLowerCase().trim();
-//     suggestionsBox.innerHTML = "";
+  input.addEventListener("input", function () {
+    const query = input.value.toLowerCase().trim();
+    suggestionsBox.innerHTML = "";
 
-//     if (query === "") return;
+    if (query === "") return;
 
-//     const filtered = serials.filter((serial) =>
-//       serial.name.toLowerCase().includes(query)
-//     );
+    const filtered = serials.filter((serial) =>
+      serial.name.toLowerCase().includes(query)
+    );
 
     if (filtered.length === 0) {
       suggestionsBox.innerHTML = `<div class="p-2 text-sm text-gray-600">سریالی یافت نشد</div>`;
