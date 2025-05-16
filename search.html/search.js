@@ -120,20 +120,20 @@
 // //   {
 // //     threshold: 0.3,
 // //   }
-// // );
+);
 
-// // document
-// //   .querySelectorAll(".scroll-animate")
-// //   .forEach((el) => observer.observe(el));
-// // // Search
-// // const serials = [
-// //   { name: "Breaking Bad", genre: "Crime", year: 2008 },
-// //   { name: "Better Call Saul", genre: "Drama", year: 2015 },
-// //   { name: "Game of Thrones", genre: "Fantasy", year: 2011 },
-// //   { name: "Sherlock", genre: "Mystery", year: 2010 },
-// //   { name: "Stranger Things", genre: "Sci-Fi", year: 2016 },
-// //   { name: "Band of Brothers", genre: "War", year: 2001 },
-// // ];
+document
+  .querySelectorAll(".scroll-animate")
+  .forEach((el) => observer.observe(el));
+// Search
+const serials = [
+  { name: "Breaking Bad", genre: "Crime", year: 2008 },
+  { name: "Better Call Saul", genre: "Drama", year: 2015 },
+  { name: "Game of Thrones", genre: "Fantasy", year: 2011 },
+  { name: "Sherlock", genre: "Mystery", year: 2010 },
+  { name: "Stranger Things", genre: "Sci-Fi", year: 2016 },
+  { name: "Band of Brothers", genre: "War", year: 2001 },
+];
 
 const input = document.getElementById("searchInput");
 const resultDiv = document.getElementById("result");
