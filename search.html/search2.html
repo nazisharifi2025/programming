@@ -1,10 +1,31 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <script src="search.js" defer></script>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+        direction: rtl;
+        padding: 20px;
+      }
+      input {
+        padding: 8px;
+        width: 300px;
+      }
+      .result {
+        margin-top: 20px;
+      }
+      .serial {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <div
@@ -14,22 +35,72 @@
         class="bg-gradient-to-t bg-transparent from-gray-900 to-transparent h-full w-full"
       >
         <div
-          class="w-full bg-bgcon mx-auto px-3.5 h-20 flex justify-between items-center py-9"
+          class="w-full bg-bgcon mx-auto px-3.5 h-20 flex bg-gradient-to-b from-gray-950 to-transparent justify-between items-center py-9"
         >
           <input
             type="search"
+            id="search"
             placeholder="جستجوی فیلم و سریال"
             class="py-3 px-18 rounded-md shadow-md my-4 mx-5 bg-white outline-0 shadow-black"
           />
-          <ul class="flex justify-center items-center gap-3.5 font-bold">
+          <ul
+            class="flex justify-center items-center gap-8 text-white font-bold"
+          >
             <li>سریال شهرزاد</li>
             <li>سریال دل</li>
             <li>سریال پدر</li>
             <li>سریال باران</li>
             <li>سریال نفرت</li>
           </ul>
+          <div class="flex space-x-6 text-white">
+            <i class="fas fa-search text-2xl py-5"></i>
+            <i class="fas fa-bars text-2xl py-5"></i>
+          </div>
+        </div>
+        <div class="w-full h-full flex gap-10 justify-center items-center">
+          <div class="w-[50%] h-[320px]">
+            <div
+              class="h-1/2 border-b-4 border-gray-800 text-white flex flex-col gap-3"
+              dir="rtl"
+            >
+              <h1 class="font-bold text-2xl text-white">سریال شهرزاد</h1>
+              <p class="text-[16px] font-bold">shahrzad-1394</p>
+              <h1 class="font-bold text-2xl text-white">
+                بازیگران: علی نصریان , امیر جعفری , امیر فتحی
+              </h1>
+              <h1 class="font-bold text-2xl text-white">کارگردان: حسن فتحی</h1>
+            </div>
+          </div>
+          <img
+            src="../poblic/shahrzad-s3-final-min-214x300.jpg"
+            class="h-[320px] rounded-md float-right"
+            alt=""
+          />
         </div>
       </div>
     </div>
+     search 
+    <div
+      id="div"
+      class="h-screen w-full bg-bgcon items-center space-x-1 hidden absolute top-0 justify-center"
+    >
+      <i class="fas fa-times absolute text-3xl top-20 right-32" id="close"></i>
+
+      <i
+        class="fas fa-search text-2xl h-12 w-14 rounded-full bg-blue-500 text-center py-2"
+      ></i>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="search"
+        class="w-[70%] h-12 rounded-full border border-black relative outline-0"
+      />
+      <div
+        id="suggestions"
+        class="absolute bg-white mt-1 bottom-12 w-[70%] rounded shadow-md text-right z-50"
+      ></div>
+
+      <div class="result" id="result"></div>
+    </div>
   </body>
-</html>
+</html> -->

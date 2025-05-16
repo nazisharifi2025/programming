@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@theme {
+  --color-bgcon: rgba(255, 255, 255, 0.3);
+  --color-bgfi: rgba(255, 255, 255, 0.1);
+  --color-bg-slider: (0, 0, 255, 0.7);
+}
 @layer components {
   .btn-clip {
     clip-path: polygon(
@@ -12,6 +17,7 @@
       0% 20%
     );
   }
+
   .inboxdiv {
     @apply bg-white text-black p-4 rounded-md shadow-md my-4 float-right flex flex-col justify-center items-center;
   }
