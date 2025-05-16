@@ -59,22 +59,22 @@
 //       serial.name.toLowerCase().includes(query)
 //     );
 
-//     if (filtered.length === 0) {
-//       suggestionsBox.innerHTML = `<div class="p-2 text-sm text-gray-600">سریالی یافت نشد</div>`;
-//     } else {
-//       filtered.forEach((serial) => {
-//         const item = document.createElement("div");
-//         item.className =
-//           "p-2 hover:bg-gray-100 cursor-pointer text-black border-b";
-//         item.textContent = serial.name;
-//         item.addEventListener("click", () => {
-//           input.value = serial.name;
-//           suggestionsBox.innerHTML = ""; // پاک کردن پیشنهادات
-//         });
-//         suggestionsBox.appendChild(item);
-//       });
-//     }
-//   });
+    if (filtered.length === 0) {
+      suggestionsBox.innerHTML = `<div class="p-2 text-sm text-gray-600">سریالی یافت نشد</div>`;
+    } else {
+      filtered.forEach((serial) => {
+        const item = document.createElement("div");
+        item.className =
+          "p-2 hover:bg-gray-100 cursor-pointer text-black border-b";
+        item.textContent = serial.name;
+        item.addEventListener("click", () => {
+          input.value = serial.name;
+          suggestionsBox.innerHTML = ""; // پاک کردن پیشنهادات
+        });
+        suggestionsBox.appendChild(item);
+      });
+    }
+  });
 
   // بستن پیشنهادها اگر کلیک خارج از input یا لیست بود
   document.addEventListener("click", function (e) {
