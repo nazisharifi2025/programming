@@ -84,14 +84,14 @@
 //   });
 // });
 
-// // const search = document.getElementById("search");
-// // const div = document.getElementById("div");
-// // const close = document.getElementById("close");
-// // search.addEventListener("click", () => {
-// //   div.classList.remove("hidden");
-// //   div.classList.add("flex");
-// //   search.style.display = "none";
-// // });
+const search = document.getElementById("search");
+const div = document.getElementById("div");
+const close = document.getElementById("close");
+search.addEventListener("click", () => {
+  div.classList.remove("hidden");
+  div.classList.add("flex");
+  search.style.display = "none";
+});
 close.addEventListener("click", () => {
   div.classList.add("hidden");
   div.classList.remove("flex");
