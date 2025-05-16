@@ -138,9 +138,9 @@
 // // const input = document.getElementById("searchInput");
 // // const resultDiv = document.getElementById("result");
 
-// // input.addEventListener("input", function () {
-// //   const query = input.value.toLowerCase();
-// //   resultDiv.innerHTML = ""; // پاک کردن نتایج قبلی
+input.addEventListener("input", function () {
+  const query = input.value.toLowerCase();
+  resultDiv.innerHTML = ""; // پاک کردن نتایج قبلی
 
   const filtered = serials.filter((serial) =>
     serial.name.toLowerCase().includes(query)
