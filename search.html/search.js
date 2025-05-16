@@ -135,8 +135,8 @@
 // //   { name: "Band of Brothers", genre: "War", year: 2001 },
 // // ];
 
-// // const input = document.getElementById("searchInput");
-// // const resultDiv = document.getElementById("result");
+const input = document.getElementById("searchInput");
+const resultDiv = document.getElementById("result");
 
 input.addEventListener("input", function () {
   const query = input.value.toLowerCase();
