@@ -146,16 +146,16 @@
 // //     serial.name.toLowerCase().includes(query)
 // //   );
 
-// //   if (filtered.length === 0) {
-// //     resultDiv.innerHTML = "<p>سریالی یافت نشد</p>";
-// //   } else {
-// //     filtered.forEach((serial) => {
-// //       const div = document.createElement("div");
-// //       div.className = "serial";
-// //       div.innerHTML = `<strong>${serial.name}</strong><br>
-// //          ژانر: ${serial.genre} <br>
-// //          سال: ${serial.year}`;
-// //       resultDiv.appendChild(div);
-// //     });
-// //   }
-// // });
+  if (filtered.length === 0) {
+    resultDiv.innerHTML = "<p>سریالی یافت نشد</p>";
+  } else {
+    filtered.forEach((serial) => {
+      const div = document.createElement("div");
+      div.className = "serial";
+      div.innerHTML = `<strong>${serial.name}</strong><br>
+         ژانر: ${serial.genre} <br>
+         سال: ${serial.year}`;
+      resultDiv.appendChild(div);
+    });
+  }
+});
