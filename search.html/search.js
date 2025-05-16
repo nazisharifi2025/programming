@@ -142,9 +142,9 @@
 // //   const query = input.value.toLowerCase();
 // //   resultDiv.innerHTML = ""; // پاک کردن نتایج قبلی
 
-// //   const filtered = serials.filter((serial) =>
-// //     serial.name.toLowerCase().includes(query)
-// //   );
+  const filtered = serials.filter((serial) =>
+    serial.name.toLowerCase().includes(query)
+  );
 
   if (filtered.length === 0) {
     resultDiv.innerHTML = "<p>سریالی یافت نشد</p>";
