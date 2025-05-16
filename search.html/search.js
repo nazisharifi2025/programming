@@ -92,11 +92,11 @@
 // //   div.classList.add("flex");
 // //   search.style.display = "none";
 // // });
-// // close.addEventListener("click", () => {
-// //   div.classList.add("hidden");
-// //   div.classList.remove("flex");
-// //   search.style.display = "block";
-// // });
+close.addEventListener("click", () => {
+  div.classList.add("hidden");
+  div.classList.remove("flex");
+  search.style.display = "block";
+});
 const text = "Dinner with us Friend or With Family Or .........";
 let index = 0;
 function types() {
