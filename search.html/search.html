@@ -17,9 +17,14 @@
         margin-top: 20px;
       }
       .serial {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border-bottom: 1px solid #ccc;
         padding-bottom: 10px;
+      }
+      .serial img {
+        max-width: 200px;
+        display: block;
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -34,12 +39,48 @@
 
     <script>
       const serials = [
-        { name: "Breaking Bad", genre: "Crime", year: 2008 },
-        { name: "Better Call Saul", genre: "Drama", year: 2015 },
-        { name: "Game of Thrones", genre: "Fantasy", year: 2011 },
-        { name: "Sherlock", genre: "Mystery", year: 2010 },
-        { name: "Stranger Things", genre: "Sci-Fi", year: 2016 },
-        { name: "Band of Brothers", genre: "War", year: 2001 },
+        {
+          name: "Breaking Bad",
+          genre: "Crime",
+          year: 2008,
+          image:
+            "https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png",
+        },
+        {
+          name: "Better Call Saul",
+          genre: "Drama",
+          year: 2015,
+          image:
+            "https://upload.wikimedia.org/wikipedia/en/c/c0/Better_Call_Saul_title_card.png",
+        },
+        {
+          name: "Game of Thrones",
+          genre: "Fantasy",
+          year: 2011,
+          image:
+            "https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg",
+        },
+        {
+          name: "Sherlock",
+          genre: "Mystery",
+          year: 2010,
+          image:
+            "https://upload.wikimedia.org/wikipedia/en/b/b9/Sherlock_titlecard.jpg",
+        },
+        {
+          name: "Stranger Things",
+          genre: "Sci-Fi",
+          year: 2016,
+          image:
+            "https://upload.wikimedia.org/wikipedia/en/f/f7/Stranger_Things_season_1.jpg",
+        },
+        {
+          name: "Band of Brothers",
+          genre: "War",
+          year: 2001,
+          image:
+            "https://upload.wikimedia.org/wikipedia/en/3/3f/Band_of_Brothers_poster.jpg",
+        },
       ];
 
       const input = document.getElementById("searchInput");
@@ -47,7 +88,7 @@
 
       input.addEventListener("input", function () {
         const query = input.value.toLowerCase();
-        resultDiv.innerHTML = ""; // پاک کردن نتایج قبلی
+        resultDiv.innerHTML = "";
 
         const filtered = serials.filter((serial) =>
           serial.name.toLowerCase().includes(query)
@@ -59,16 +100,16 @@
           filtered.forEach((serial) => {
             const div = document.createElement("div");
             div.className = "serial";
-            div.innerHTML = `<strong>${serial.name}</strong><br>
-         ژانر: ${serial.genre} <br>
-         سال: ${serial.year}`;
+            div.innerHTML = `
+            <strong>${serial.name}</strong><br>
+            ژانر: ${serial.genre} <br>
+            سال: ${serial.year} <br>
+            <img src="${serial.image}" alt="${serial.name}">
+          `;
             resultDiv.appendChild(div);
           });
         }
       });
     </script>
-    </body>
-    </html>
-    
   </body>
 </html>
