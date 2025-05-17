@@ -6,10 +6,12 @@ const times = document.getElementById("times");
 search.addEventListener("click", () => {
   input.classList.remove("hidden");
   search.classList.add("opacity-0");
+  times.classList.remove("opacity-0");
 });
 times.addEventListener("click", () => {
-  input.classList.remove("hidden");
-  search.classList.add("opacity-0");
+  input.classList.add("hidden");
+  search.classList.remove("opacity-0");
+  times.classList.add("opacity-0");
 });
 
 const arrey = [
