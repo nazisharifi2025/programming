@@ -48,10 +48,28 @@ const arrey = [
     Image: "../poblic/105370.jpg",
   },
 ];
- input.addEventListener("input",()=>{
-    const query = input.value.toLowerCase();
-        resultDiv.innerHTML = "";
-         const filterd = arrey.filter((sereal)=>
-            sereal.name.toLowerCase().includes(query));
-         if
- })
+input.addEventListener("input", () => {
+  const query = input.value.toLowerCase();
+  resultDiv.innerHTML = "";
+  const filterd = arrey.filter((sereal) =>
+    sereal.name.toLowerCase().includes(query)
+  );
+  if (filterd.length === 0) {
+    shoingdiv.innerHTML = "<p>سریالی دریافت نشد</p>";
+  } else {
+    filterd.forEach((sereal) => {
+      const div = document.createElement("div");
+      const strong = document.createElement("strong");
+      const p1 = document.createElement("p");
+      const img = document.createElement("img");
+      div.classList.add("div");
+      strong.textContent = sereal.name;
+      p1.textContent = sereal.gener;
+      img.src = sereal.Image;
+      div.appendChild(strong);
+      div.appendChild(p);
+      div.appendChild(img);
+      shoingdiv.appendChild(div);
+    });
+  }
+});
