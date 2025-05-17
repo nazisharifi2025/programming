@@ -1,5 +1,6 @@
 const search = document.getElementById("search");
 const input = document.getElementById("input");
+const shoingdiv = document.getElementById("shoingdiv");
 search.addEventListener("click", () => {
   input.classList.remove("hidden");
   search.classList.add("opacity-0");
