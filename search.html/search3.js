@@ -1,8 +1,13 @@
 const search = document.getElementById("search");
 const input = document.getElementById("input");
 const shoingdiv = document.getElementById("shoingdiv");
+const times = document.getElementById("times");
 
 search.addEventListener("click", () => {
+  input.classList.remove("hidden");
+  search.classList.add("opacity-0");
+});
+times.addEventListener("click", () => {
   input.classList.remove("hidden");
   search.classList.add("opacity-0");
 });
@@ -10,42 +15,42 @@ search.addEventListener("click", () => {
 const arrey = [
   {
     name: "بلندی های بادگیر",
-    gener: "درام",
+    gener: "زیبا",
     Image: "../poblic/20653.jpg",
   },
   {
     name: "طالار گرگ",
-    gener: "درام",
+    gener: "دل نشین",
     Image: "../poblic/22447.jpg",
   },
   {
     name: "بادبدگ باز",
-    gener: "درام",
+    gener: "زیبا",
     Image: "../poblic/3858.jpg",
   },
   {
     name: "تس دور برویل",
-    gener: "درام",
+    gener: "محبوب",
     Image: "../poblic/48663.jpg",
   },
   {
     name: "سالار مگس ها",
-    gener: "درام",
+    gener: "زیبا",
     Image: "../poblic/63545.jpg",
   },
   {
     name: "اشتباه در ستاره های بخت ما",
-    gener: "درام",
+    gener: "زیبا",
     Image: "../poblic/72381.jpg",
   },
   {
     name: "غرور و تغصب",
-    gener: "درام",
+    gener: "دل نشین",
     Image: "../poblic/121311.jpg",
   },
   {
     name: "خواب گران",
-    gener: "درام",
+    gener: "زیبایی",
     Image: "../poblic/105370.jpg",
   },
 ];
