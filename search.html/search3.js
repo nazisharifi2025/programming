@@ -48,3 +48,10 @@ const arrey = [
     Image: "../poblic/105370.jpg",
   },
 ];
+ input.addEventListener("input",()=>{
+    const query = input.value.toLowerCase();
+        resultDiv.innerHTML = "";
+         const filterd = arrey.filter((sereal)=>
+            sereal.name.toLowerCase().includes(query));
+         if
+ })
