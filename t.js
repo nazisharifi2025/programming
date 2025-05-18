@@ -5,5 +5,6 @@ h1.textContent = "in the name of allah";
 div.style.background = "red";
 div.classList.add("text-white");
 div.classList.add("h-screen");
+div.classList.add("w-full");
 body.appendChild(div);
 div.appendChild(h1);
