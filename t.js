@@ -6,5 +6,6 @@ div.style.background = "red";
 div.classList.add("text-white");
 div.classList.add("h-screen");
 div.classList.add("w-full");
+div.classList.add("text-4xl");
 body.appendChild(div);
 div.appendChild(h1);
